@@ -1,0 +1,76 @@
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: 'Roroto', 'Verdana', 'Tahoma', sans-serif;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.button-prtfl {
+  background-color: #f5f4fa;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-prtfl:hover,
+.button-prtfl:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.link-header {
+  color: #212121;
+  font-size: 14px;
+}
+
+.link-header:hover,
+.link-header:focus {
+  color: var(--accent-color);
+}
+
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-us-header {
+  color: #757575;
+  font-size: 14px;
+}
+
+.contact-us-header:hover,
+.contact-us-header:focus {
+  color: var(--accent-color);
+}
+
+.contact-us-footer {
+  color: #ffffff99;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contact-us-footer:hover,
+.contact-us-footer:focus {
+  color: var(--accent-color);
+}
+
+.prtfl-card-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.prtfl-filtr-description {
+  font-size: 14px;
+  line-height: 1.87;
+}
