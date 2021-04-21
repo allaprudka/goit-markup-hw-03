@@ -9,54 +9,59 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous" />
     <link rel="stylesheet" href=" css/styles.css"/>
 
 </head>
 <body>
-    <header id="logo">
+   
+    <header id="logo" class=" container nav-main">
         <span class="accent"><a href="#logo">WebStudio</a></span>
         <nav>
-            <ul class="list">
-                <li><a class="link-header" href="./index.html">Студия</a></li>
-                <li><a class="link-header" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link-header" href="#contacts">Контакты</a></li>
+            <ul class="site-nav list">
+                <li class="nav-item"><a class="link-header" href="./index.html">Студия</a></li>
+                <li class="nav-item"><a class="link-header" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="link-header" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="list">
-            <li><a class="contact-us-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-us-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="nav-contact-us-header list">
+            <li class="nav-contact-us-item"><a class="contact-us-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="nav-contact-us-item"><a class="contact-us-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
-    <main>
+
+    <main class="container">
         <section>
-            <div>
+            <div class="section-buy">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
                 <div>
-                    <button type="button" class="button">Заказать услугу</button>
+                    <button type="button" class="button-buy">Заказать услугу</button>
                 </div>
             </div>
-            <ul class="list">
-                <li>
+            <ul class="value-p-list list">
+                <li class="value-list">
                     <h3 class="title-company-value">Внимание к деталям</h3>
-                    <p>
+                    <p class="text-paragraph">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li>
+                <li class="value-list">
                     <h3 class="title-company-value">Пунктуальность</h3>
-                    <p>
+                    <p class="text-paragraph">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li>
+                <li class="value-list">
                     <h3 class="title-company-value">Планирование</h3>
-                    <p>
+                    <p class="text-paragraph">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li>
+                <li class="value-list">
                     <h3 class="title-company-value">Современные технологии</h3>
-                    <p>
+                    <p class="text-paragraph">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                     </p>
                 </li>
@@ -66,36 +71,46 @@
         </section>
         <section>
             <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li>
-                    <img src="images/sec-2-img-1.jpeg" alt="Планшет с клавиатурой" width="200">
+            <div>
+            <ul class="what-we-do list">
+                <li class="what-we-do-item">
+                    <img src="images/sec-2-img-1.jpeg" alt="Планшет с клавиатурой" width="370">
                 </li>
-                <li>
-                    <img src="images/sec-2-img-2.jpeg" alt="Ноутбук" width="200">
+                <li class="what-we-do-item">
+                    <img src="images/sec-2-img-2.jpeg" alt="Ноутбук" width="370">
                 </li>
-                <li>
-                    <img src="images/sec-2-img-3.jpeg" alt="Планшет" width="200">
+                <li class="what-we-do-item">
+                    <img src="images/sec-2-img-3.jpeg" alt="Планшет" width="370">
                 </li>
             </ul>
+            </div>
         </section>
         <section>
             <h2 class="section-title">Наша команда</h2>
-            <ul class="list">
-                <li>
-                    <figure><img src="images/ihor-demianenko-product-designer.jpeg" alt="Игорь Демьяненко Product Designer" width="200"><figcaption>Игорь Демьяненко Product Designer</figcaption></figure>
+            <ul class="our-team list">
+                <li class="our-team-item">
+                    <img src="images/ihor-demianenko-product-designer.jpeg" alt="Игорь Демьяненко Product Designer" width="270">
+                    <h2 class="our-team-person">Игорь Демьяненко</h2>
+                    <h3 class="our-team-title">Product Designer</h3>
                 </li>
-                <li>
-                    <figure><img src="images/olha-repina-frontend-developer.jpeg" alt="Ольга Репина Frontend Developer" width="200"><figcaption>Ольга Репина Frontend Developer</figcaption></figure>
+                <li class="our-team-item">
+                    <img src="images/olha-repina-frontend-developer.jpeg" alt="Ольга Репина Frontend Developer" width="270">
+                    <h2 class="our-team-person">Ольга Репина</h2>
+                    <h3 class="our-team-title">Frontend Developer</h3>
                 </li>
-                <li>
-                    <figure><img src="images/nikolay-tarasov-marketing.jpeg" alt="Николай Тарасов Marketing" width="200"><figcaption>Николай Тарасов Marketing</figcaption></figure>
+                <li class="our-team-item">
+                    <img src="images/nikolay-tarasov-marketing.jpeg" alt="Николай Тарасов Marketing" width="270">
+                    <h2 class="our-team-person">Николай Тарасов</h2>
+                    <h3 class="our-team-title">Marketing</h3>
                 </li>
-                <li>
-                    <figure><img src="images/mikhail-ermakov-ui-designer.jpeg" alt="Михаил Ермаков UI Designer" width="200"><figcaption>Михаил Ермаков UI Designer</figcaption></figure>
+                <li class="our-team-item">
+                   <img src="images/mikhail-ermakov-ui-designer.jpeg" alt="Михаил Ермаков UI Designer" width="270">
+                   <h2 class="our-team-person">Михаил Ермаков</h2>
+                   <h3 class="our-team-title">UI Designer</h3>
                 </li>
             </ul>
         </section>
-        <footer>
+        <footer class="container">
             <span class="accent"><a href="#logo">WebStudio</a></span>
             <address>г. Киев, пр-т Леси Украинки, 26</address>
             <ul class="list">

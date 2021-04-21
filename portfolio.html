@@ -9,29 +9,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
 
 <link rel="stylesheet" href=" css/styles.css" />
     
 
 </head>
 <body>
-    <header id="logo">
+  
+    <header id="logo" class="container nav-main">
         <span class="accent"><a href="#logo">WebStudio</a></span>
         <nav>
-            <ul class="list">
-                <li><a class="link-header" href="./index.html">Студия</a></li>
-                <li><a class="link-header" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link-header" href="#contacts">Контакты</a></li>
+            <ul class="site-nav list">
+                <li class="nav-item"><a class="link-header" href="./index.html">Студия</a></li>
+                <li class="nav-item"><a class="link-header" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="link-header" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="list">
-            <li><a class="contact-us-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-us-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="nav-contact-us-header list">
+            <li class="nav-contact-us-item"><a class="contact-us-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="nav-contact-us-item"><a class="contact-us-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
+    
 
-    <main>
-        <div>
+    <main  class="container">
+        <div class="filte-button">
             <button class="button-prtfl" type="button">Все</button>
             <button class="button-prtfl" type="button">Веб-сайт</button>
             <button class="button-prtfl" type="button">Приложения</button>
@@ -39,8 +44,10 @@
             <button class="button-prtfl" type="button">Маркетинг</button>
         </div>
 
-        <ul class="products list list">
-            <li>
+        <div>
+        <ul class="products-list list">
+            <li class="product-item">
+
                 <a href="./portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-1-technokriak.jpeg" 
@@ -50,7 +57,7 @@
                     <h3 class="prtfl-filtr-description web-site">Веб-сайт</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="./portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-2-new-poster.jpeg" 
@@ -60,7 +67,7 @@
                     <h3 class="prtfl-filtr-description design">Дизайн</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-3-seafood.jpeg" 
@@ -71,7 +78,7 @@
                 </a>
             </li>
             
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-4-prime.jpeg" 
@@ -81,7 +88,7 @@
                     <h3 class="prtfl-filtr-description marketing">Маркетинг</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-5-boxes.jpeg" 
@@ -91,7 +98,7 @@
                     <h3 class="prtfl-filtr-description app">Приложение</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-6-inspiration.jpeg" 
@@ -101,7 +108,7 @@
                     <h3 class="prtfl-filtr-description web-site">Веб-сайт</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-7-limited.jpeg" 
@@ -111,7 +118,7 @@
                     <h3 class="prtfl-filtr-description design">Дизайн</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-8-lab.jpeg" 
@@ -121,7 +128,7 @@
                     <h3 class="prtfl-filtr-description marketing">Маркетинг</h3>
                 </a>
             </li>
-            <li>
+            <li class="product-item">
                 <a href="portfolio.html" class="prtfl-card">
                     <img 
                     src="images/prtfl-img-9-growing.jpeg" 
@@ -132,10 +139,12 @@
                 </a>
             </li>
         </ul>
+        </div>
+    </main>
 
 
    
-<footer>
+<footer class="container">
     <span class="accent"><a href="#logo">WebStudio</a></span>
     <address>г. Киев, пр-т Леси Украинки, 26</address>
     <ul class="list">
